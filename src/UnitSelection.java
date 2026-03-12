@@ -15,7 +15,6 @@ public class UnitSelection extends JFrame {
         metricBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //System.out.println("metric btn clicked");
                 us.setVisible(false);
                 MetricData m = new MetricData();
                 m.setTitle("Metric Calculator");
@@ -23,6 +22,20 @@ public class UnitSelection extends JFrame {
                 m.setLocationRelativeTo(null);
                 m.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 m.setVisible(true);
+            }
+        });
+
+        //edited by anjana
+        englishBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                us.setVisible(false);
+                EnglishData ed = new EnglishData();
+                ed.setTitle("Metric Calculator");
+                ed.setSize(400,200);
+                ed.setLocationRelativeTo(null);
+                ed.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                ed.setVisible(true);
             }
         });
     }
