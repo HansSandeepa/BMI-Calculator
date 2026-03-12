@@ -14,6 +14,7 @@ public class MetricData extends JFrame {
     public MetricData() {
         setContentPane(metricPanel);
         calculateButton.addActionListener(new ActionListener() {
+            //test
             @Override
             public void actionPerformed(ActionEvent e) {
                 double weight = Double.parseDouble(weightInput.getText());
